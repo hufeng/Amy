@@ -1,5 +1,9 @@
 import { StackNavigator } from 'react-navigation';
-import Home from '../home';
+import HomeScene from '../home';
+import MathScene from '../math';
+import WordScene from '../word';
 export default StackNavigator({
-    Home: { screen: Home }
+    HomeScene: { screen: HomeScene },
+    MathScene: { screen: MathScene },
+    WordScene: { screen: WordScene }
 });

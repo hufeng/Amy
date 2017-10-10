@@ -657,6 +657,10 @@ babel-plugin-transform-regenerator@^6.5.0:
   dependencies:
     regenerator-transform "^0.10.0"
 
+babel-plugin-transform-rn-react-dom@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-rn-react-dom/download/babel-plugin-transform-rn-react-dom-1.0.0.tgz#20bfe6eedb8f2183d33f6654cb3d984eb767ece3"
+
 babel-plugin-transform-strict-mode@^6.24.1:
   version "6.24.1"
   resolved "http://registry.npm.taobao.org/babel-plugin-transform-strict-mode/download/babel-plugin-transform-strict-mode-6.24.1.tgz#d5faf7aa578a65bbe591cf5edae04a0c67020758"
@@ -1983,6 +1987,10 @@ image-size@^0.6.0:
   version "0.6.1"
   resolved "http://registry.npm.taobao.org/image-size/download/image-size-0.6.1.tgz#98122a562d59dcc097ef1b2c8191866eb8f5d663"
 
+immutable@^3.8.1:
+  version "3.8.2"
+  resolved "http://registry.npm.taobao.org/immutable/download/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
+
 imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "http://registry.npm.taobao.org/imurmurhash/download/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
@@ -2915,6 +2923,10 @@ minimist@~0.0.1:
   version "0.0.10"
   resolved "http://registry.npm.taobao.org/minimist/download/minimist-0.0.10.tgz#de3f98543dbf96082be48ad1a0c7cda836301dcf"
 
+mitt@^1.1.2:
+  version "1.1.2"
+  resolved "http://registry.npm.taobao.org/mitt/download/mitt-1.1.2.tgz#380e61480d6a615b660f07abb60d51e0a4e4bed6"
+
 "mkdirp@>=0.5 0", mkdirp@^0.5.1:
   version "0.5.1"
   resolved "http://registry.npm.taobao.org/mkdirp/download/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
@@ -3302,6 +3314,15 @@ plist@^1.2.0:
     util-deprecate "1.0.2"
     xmlbuilder "4.0.0"
     xmldom "0.1.x"
+
+plume2@^0.2.2:
+  version "0.2.2"
+  resolved "http://registry.npm.taobao.org/plume2/download/plume2-0.2.2.tgz#5baaff9b960f0961ba421878d85ddfc72524ccd9"
+  dependencies:
+    immutable "^3.8.1"
+    mitt "^1.1.2"
+    prop-types "^15.5.10"
+    str-enum "^1.0.0"
 
 postcss-value-parser@^3.3.0:
   version "3.3.0"
@@ -3986,6 +4007,10 @@ statuses@1:
 statuses@~1.2.1:
   version "1.2.1"
   resolved "http://registry.npm.taobao.org/statuses/download/statuses-1.2.1.tgz#dded45cc18256d51ed40aec142489d5c61026d28"
+
+str-enum@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/str-enum/download/str-enum-1.0.0.tgz#71a76ce6da6fa7ab96039d616cc70725869ebe79"
 
 stream-buffers@~2.2.0:
   version "2.2.0"

@@ -9,6 +9,7 @@
 	"dependencies": {
 		"@types/react": "^16.0.10",
 		"@types/react-native": "^0.49.2",
+		"plume2": "^0.2.2",
 		"react": "16.0.0-beta.5",
 		"react-native": "0.49.3",
 		"react-navigation": "^1.0.0-beta.13",
@@ -16,6 +17,7 @@
 	},
 	"devDependencies": {
 		"babel-jest": "21.2.0",
+		"babel-plugin-transform-rn-react-dom": "^1.0.0",
 		"babel-preset-react-native": "4.0.0",
 		"jest": "21.2.1",
 		"react-test-renderer": "16.0.0-beta.5",

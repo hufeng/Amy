@@ -8,6 +8,7 @@
     "outDir": "./js",
     "jsx": "react-native",
     "noImplicitAny": false,
+    "experimentalDecorators": true,
     "plugins": [
       {
         "name": "typescript-styled-plugin"

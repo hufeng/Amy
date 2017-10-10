@@ -4,6 +4,7 @@ interface IProps {
   title: string;
   primary?: boolean;
   warnning?: boolean;
+  onPress?: () => void;
 }
 
 const Wrapper = styled.TouchableOpacity`
