@@ -1,16 +1,10 @@
 import React from 'react';
-import styled from 'styled-components/native';
-
-const themeColor = props => {
-  switch (props.type) {
-    case 'primary':
-      return { bgColor: '#5cb85c', borderColor: '#4cae4c' };
-    case 'warnning':
-      return { bgColor: '#f0ad4e', borderColor: '#eea236' };
-    default:
-      return { bgColor: '#FFF', borderColor: '#ccc' };
-  }
-};
+import styled, { css } from 'styled-components/native';
+interface IProps {
+  title: string;
+  primary?: boolean;
+  warnning?: boolean;
+}
 
 const Wrapper = styled.TouchableOpacity`
   width: 200;
@@ -19,7 +13,22 @@ const Wrapper = styled.TouchableOpacity`
   border-radius: 100;
   align-content: center;
   justify-content: center;
-  background-color: ${props => themeColor(props).bgColor};
+  background-color: #fff;
+  border-color: #ccc;
+
+  ${(props: IProps) =>
+    props.primary &&
+    css`
+      background-color: #5cb85c;
+      border-color: #4cae4c;
+    `};
+
+  ${props =>
+    props.warnning &&
+    css`
+      background-color: #f0ad4e;
+      border-color: #eea236;
+    `};
 `;
 
 const Text = styled.Text`
@@ -29,9 +38,9 @@ const Text = styled.Text`
   color: #fff;
 `;
 
-const Button = props => {
+const Button = (props: IProps) => {
   return (
-    <Wrapper {...props} activeOpacity={0.7}>
+    <Wrapper {...props} activeOpacity={0.8}>
       <Text>{props.title}</Text>
     </Wrapper>
   );

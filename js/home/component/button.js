@@ -1,15 +1,5 @@
 import React from 'react';
-import styled from 'styled-components/native';
-const themeColor = props => {
-    switch (props.type) {
-        case 'primary':
-            return { bgColor: '#5cb85c', borderColor: '#4cae4c' };
-        case 'warnning':
-            return { bgColor: '#f0ad4e', borderColor: '#eea236' };
-        default:
-            return { bgColor: '#FFF', borderColor: '#ccc' };
-    }
-};
+import styled, { css } from 'styled-components/native';
 const Wrapper = styled.TouchableOpacity `
   width: 200;
   height: 200;
@@ -17,7 +7,20 @@ const Wrapper = styled.TouchableOpacity `
   border-radius: 100;
   align-content: center;
   justify-content: center;
-  background-color: ${props => themeColor(props).bgColor};
+  background-color: #fff;
+  border-color: #ccc;
+
+  ${(props) => props.primary &&
+    css `
+      background-color: #5cb85c;
+      border-color: #4cae4c;
+    `};
+
+  ${props => props.warnning &&
+    css `
+      background-color: #f0ad4e;
+      border-color: #eea236;
+    `};
 `;
 const Text = styled.Text `
   font-size: 24;
@@ -25,8 +28,8 @@ const Text = styled.Text `
   text-align: center;
   color: #fff;
 `;
-const Button = props => {
-    return (<Wrapper {...props} activeOpacity={0.7}>
+const Button = (props) => {
+    return (<Wrapper {...props} activeOpacity={0.8}>
       <Text>{props.title}</Text>
     </Wrapper>);
 };

@@ -7,6 +7,7 @@
     "rootDir": "./ts",
     "outDir": "./js",
     "jsx": "react-native",
+    "noImplicitAny": false,
     "plugins": [
       {
         "name": "typescript-styled-plugin"
